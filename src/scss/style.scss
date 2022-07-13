@@ -1,0 +1,152 @@
+@import "init.scss";
+
+.wrapper
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.btnStart
+{
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    top: 49vh;
+    left: 49vw;
+    z-index: 2;
+
+    background-color: #421111;
+    border: 3px solid rgb(255, 217, 3);
+    border-radius: 17px;
+    
+    color: rgb(255, 217, 3);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.header 
+{
+    display: flex;
+    width: 100%;
+    height: 8%;
+    background-color: #421111;
+    z-index: 2;
+}
+.content
+{
+    width: 100%;
+    height: 92%;
+    // flex: 1 0 auto;
+    background-image: url(/src/img/Game_Field_Background.png);
+    background-size: cover;
+    animation: sparking 5s infinite;
+    z-index: 0;
+    filter: blur(5px);
+}
+@keyframes sparking 
+{
+    0%
+    {
+        filter: brightness(1);
+        filter: contrast(1);
+    }
+    50%
+    {
+        filter: brightness(0.8);
+        filter: contrast(1.3);
+    }
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#canvas
+{
+    width: 75%;
+    height: auto;
+}
+#handling
+{
+    width: 25vw;
+    height: 92vh;
+    background-color: #301e64;
+    display: none; // пока на нажмётся кнопка start - элемент будет скрыт
+    justify-content: center;
+    align-items: center;
+}
+.handling__buttons
+{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button img
+{
+    width: 100%;
+    height: 100%;
+}
+.handling__up 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.handling__center 
+{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.handling__down 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button
+{
+    width: 30%;
+    height: 100%;
+    background-color: #421111;
+    border: 3px solid rgb(255, 217, 3);
+    border-radius: 20%;
+}
+.ArrowUp 
+{
+
+}
+
+.ArrowLeft 
+{
+
+}
+.btnShoot 
+{
+    width: 30%;
+    height: 100%;
+    color: rgb(255, 217, 3);
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 50%;
+}
+.ArrowRight 
+{
+
+}
+.ArrowDown 
+{
+
+}
